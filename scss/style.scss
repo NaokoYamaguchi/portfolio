@@ -254,6 +254,7 @@
     .img-box {
         // background-color: $sub;
         overflow: hidden;
+        box-shadow: 0px 0px 2px gainsboro;
     }
 
     &__img {
@@ -345,6 +346,9 @@
 .about-content {
     font-weight: bold;
     margin-right: 100px;
+    @include mq(sp) {
+        margin-right: 80px;
+    }
 
     &__title {
         margin-bottom: 16px;

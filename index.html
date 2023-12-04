@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- OGP -->
+    <meta property="og:url" content="https://yamaguchiseisak.github.io/portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="山口せいさく所" />
+    <meta property="og:description" content="山口せいさく所" />
+    <meta property="og:site_name" content="山口せいさく所" />
+    <meta property="og:image" content="https://yamaguchiseisak.github.io/portfolio/img/festivaldefrue.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@kamakinaoko" />
+    <!-- OGPここまで -->
     <title>山口せいさく所</title>
 
     <!-- WEBフォント -->
@@ -33,6 +43,17 @@
     <script src="https://unpkg.com/vue@next"></script>
     <!-- ファビコン -->
     <link rel="shortcut icon" href="favicon.ico">
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="PGGcFK4GM4Esle7FtZMEm7Ql0WqdiJrzjv_bgaa8gkE" />
+    <!-- Google tag (gtag.js) Analytics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-03XEFGE9R1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-03XEFGE9R1');
+    </script>
 </head>
 
 <body>
@@ -52,7 +73,7 @@
                     </div>
                     <nav>
                         <ul class="header-nav">
-                            <li class="header-nav__link"><a href="index.html">WORK</a></li>
+                            <li class="header-nav__link"><a href="index.html">WORKS</a></li>
                             <li class="header-nav__link"><a href="index.html#about">ABOUT</a></li>
                             <li class="header-nav__link"><a href="index.html#contact">CONTACT</a></li>
                         </ul>
@@ -67,7 +88,7 @@
 
                     <div class="sp-header-nav" v-show="open">
                         <ul class="sp-header-nav__list">
-                            <li class="sp-header-nav__link"><a href="index.html" @click.native="open=false">WORK</a></li>
+                            <li class="sp-header-nav__link"><a href="index.html" @click.native="open=false">WORKS</a></li>
                             <li class="sp-header-nav__link"><a href="index.html#about" @click.native="open=false">ABOUT</a></li>
                             <li class="sp-header-nav__link"><a href="index.html#contact" @click.native="open=false">CONTACT</a></li>
                             
@@ -77,7 +98,7 @@
                                 <a href="https://www.facebook.com/naoko.kamaki" target="_blank" class="sp-sns-link__icon"><i
                                         class="fa-brands fa-facebook fa-2x"></i></a>
                             </div>
-                            <p class="copyrights">@yamaguchiseisak.All Right Reserved.</p>
+                            <p class="copyrights">©︎yamaguchiseisak.All Right Reserved.</p>
 
                         </ul>
                     </div>
@@ -91,6 +112,94 @@
                     <h2 class="section-headline" data-aos="fade-up" data-aos-duration="1000">WORKS</h2>
                 </div>
                 <div class="works-wrap">
+                    <!-- 子鹿社 -->
+                    <div class="works-content pad-right">
+                        <div class="img-box">
+                            <img src="./img/kojikasha.png" alt="" class="works-content__img">
+                        </div>
+                        <h3 class="works-content__title">子鹿社　WEBSITE</h3>
+                        <span class="works-content__name">CODING</span><br>
+                        <a href="https://www.kojikasha.com/" target="_blank" class="btn">VIEW SITE</a>
+                        <div class="line"></div>
+                    </div>
+                    <!-- 子鹿社 ここまで-->
+
+                    <!-- ピュアリィECサイト -->
+                    <div class="works-content pad-left">
+                        <div class="img-box">
+                            <img src="./img/purely1.png" alt="" class="works-content__img">
+                        </div>
+                        <h3 class="works-content__title">Root's Purely Online Shop</h3>
+                        <span class="works-content__name">CODING</span><br>
+                        <a href="https://online.rootspurely.com/" target="_blank" class="btn">VIEW SITE</a>
+                        <div class="line"></div>
+                    </div>
+                    <!-- ピュアリィECサイト ここまで-->
+
+                    <!-- 鶴の湯 -->
+                    <div class="works-content pad-right">
+                        <div class="img-box">
+                            <img src="./img/tsurunoyu.jpg" alt="" class="works-content__img">
+                        </div>
+                        <h3 class="works-content__title">球磨川温泉 鶴之湯旅館　WEBSITE</h3>
+                        <span class="works-content__name">CODING</span><br>
+                        <a href="https://www.tsurunoyuryokan.com/" target="_blank" class="btn">VIEW SITE</a>
+                        <div class="line"></div>
+                    </div>
+                    <!-- 鶴の湯 ここまで-->
+
+                    <!-- frue -->
+                    <div class="works-content pad-left">
+                        <div class="img-box">
+                            <img src="./img/frue.png" alt="" class="works-content__img">
+                        </div>
+                        <h3 class="works-content__title">FRUE　WEBSITE</h3>
+                        <span class="works-content__name">CODING</span><br>
+                        <a href="https://frue.jp/" target="_blank" class="btn">VIEW SITE</a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="works-content pad-right">
+                        <div class="img-box">
+                            <img src="./img/festivaldefrue.png" alt="" class="works-content__img">
+                        </div>
+                        <h3 class="works-content__title">FESTIVAL DE FRUE　WEBSITE</h3>
+                        <span class="works-content__name">CODING</span><br>
+                        <a href="https://festivaldefrue.com/" target="_blank" class="btn">VIEW SITE</a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="works-content pad-left">
+                        <div class="img-box">
+                            <img src="./img/fruezinho.png" alt="" class="works-content__img">
+                        </div>
+                        <h3 class="works-content__title">FESTIVAL FRUEZINHO　WEBSITE</h3>
+                        <span class="works-content__name">CODING</span><br>
+                        <a href="https://fruezinho.com/" target="_blank" class="btn">VIEW SITE</a>
+                        <div class="line"></div>
+                    </div>
+                    <!-- frueここまで -->
+
+                    <!-- fuji&sun -->
+                    <div class="works-content pad-right">
+                        <div class="img-box">
+                            <img src="./img/fujiandsun1.png" alt="" class="works-content__img">
+                        </div>
+                        <h3 class="works-content__title">FUJI & SUN　WEBSITE</h3>
+                        <span class="works-content__name">CODING</span><br>
+                        <a href="https://fjsn.jp/" target="_blank" class="btn">VIEW SITE</a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="works-content pad-left">
+                        <div class="img-box">
+                            <img src="./img/moonbase21.png" alt="" class="works-content__img">
+                        </div>
+                        <h3 class="works-content__title">MOON BASE　WEBSITE</h3>
+                        <span class="works-content__name">CODING</span><br>
+                        <a href="https://www.mbcamp.jp/" target="_blank" class="btn">VIEW SITE</a>
+                        <div class="line"></div>
+                    </div>
+                    <!-- fuji&sunここまで -->
+                    
+                    <!-- メガネとカラダ テラ -->
                     <div class="works-content pad-right">
                         <div class="img-box">
                             <img src="./img/terra.png" alt="" class="works-content__img">
@@ -100,36 +209,45 @@
                         <a href="https://www.terra-salon.net/" target="_blank" class="btn">VIEW SITE</a>
                         <div class="line"></div>
                     </div>
+                    <!-- メガネとカラダ テラ ここまで-->
+
+                    <!-- SENNA OFTUSIFOLIA -->
                     <div class="works-content pad-left">
+                        <div class="img-box">
+                            <img src="./img/senna obtusifolia.png" alt="" class="works-content__img">
+                        </div>
+                        <h3 class="works-content__title">SENNA OFTUSIFOLIA　WEBSITE / Online Shop</h3>
+                        <span class="works-content__name">WEB DESIGN / CODING</span><br>
+                        <a href="https://sennaobtusifolia.com/" target="_blank" class="btn">VIEW SITE</a>
+                        <div class="line"></div>
+                    </div>
+                    <!-- SENNA OFTUSIFOLIA ここまで-->
+
+                    <!-- WOODEN STUDIO -->
+                    <div class="works-content pad-right">
                         <div class="img-box">
                             <img src="./img/woodenstudio.png" alt="" class="works-content__img">
                         </div>
                         <h3 class="works-content__title">WOODEN STUDIO　WEBSITE</h3>
                         <span class="works-content__name">CODING</span><br>
                         <a href="https://naokoyamaguchi.github.io/woodenstudio/index.html" target="_blank"
-                            class="btn">VIEW
-                            SITE</a>
+                            class="btn">VIEW SITE</a>
                         <div class="line"></div>
                     </div>
-                    <div class="works-content pad-right">
+                    <!-- WOODEN STUDIO ここまで-->
+
+                    <!-- 印刷物 -->
+                    <div class="works-content pad-left">
                         <div class="img-box">
                             <img src="./img/rakugo.jpg" alt="" class="works-content__img">
                         </div>
                         <h3 class="works-content__title">立川談笑独演会　チケット</h3>
                         <span class="works-content__name">DESIGN</span>
                         <div class="line no-button"></div>
-                    </div>
-                    <div class="works-content pad-left">
-                        <div class="img-box">
-                            <img src="./img/task-app.png" alt="" class="works-content__img">
-                        </div>
-                        <h3 class="works-content__title">To Do アプリ</h3>
-                        <span class="works-content__name">CODING</span><br>
-                        <a href="https://task-app-b4346.web.app/" target="_blank" class="btn">VIEW SITE</a>
-                        <div class="line"></div>
                         <!-- ページ内リンク用のdiv -->
                         <div id="about"></div>
                     </div>
+                    <!-- 印刷物 ここまで-->
                 </div>
             </section>
 
@@ -182,7 +300,7 @@
         <!-- フッター -->
         <footer>
             <div class="footer">
-                <p class="copyrights">@yamaguchiseisak.All Right Reserved.</p>
+                <p class="copyrights">©︎yamaguchiseisak.All Right Reserved.</p>
             </div>
         </footer>
     </div>
